@@ -41,7 +41,7 @@ CREATE TABLE customers (CUST_ID VARCHAR(8) primary key,
 			CUST_EMAIL VARCHAR(40) unique NOT NULL);
 
 
-CREATE TABLE reservations ( RES_ID VARCHAR(8) primary key,
+CREATE TABLE reservations (RES_ID VARCHAR(8) primary key,
 			CUST_ID VARCHAR(8) NOT NULL,
 			SCREENING_ID VARCHAR(8) NOT NULL,
     			SEAT_NO VARCHAR(3), 
