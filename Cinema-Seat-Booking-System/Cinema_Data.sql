@@ -16,27 +16,42 @@ INSERT INTO theaters VALUES('RR01', 'R09', 30);
 INSERT INTO theaters VALUES('RR02', 'R09', 60);
 INSERT INTO theaters VALUES('WW01', 'W04', 40);
 INSERT INTO theaters VALUES('WW02', 'W04', 45);
+INSERT INTO theaters VALUES('FT0', 'F07', 50);
+INSERT INTO theaters VALUES('FT1', 'F07', 10);
+INSERT INTO theaters VALUES('PT42', 'P69', 25);
+INSERT INTO theaters VALUES('PT96', 'P69', 37);
 
 INSERT INTO movies VALUES('JW042023', 'John Wick: Chapter 4', 'Chad Stahelski', 'R', 170,  '24-Mar-23', 'With the price on his head ever increasing, legendary hitman John Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld, from New York to Paris to Japan to Berlin');
+
 INSERT INTO movies VALUES('ACWA2023', 'Asteroid City', 'Wes Anderson', 'R', 140, '16-Jun-23', 'World-changing events spectacularly disrupt the itinerary of a Junior Stargazer/Space Cadet convention in an American desert town circa 1955');
+
 INSERT INTO movies VALUES('KK275', 'Killer Klowns From Outer Space', 'Stephen Chiodo', 'PG13', 124, '27-May-88', 'When a small town is invaded by aliens from outer space who are capturing and killing the townspeople, no one takes them seriously. Why? The aliens all look like circus clowns, use weapons that look clown like, and all have painted on smiles. Only a few of the young people in the town realize the danger and of course no one believes them. Armed with an ice cream truck they try and rescue their friends.');
-INSERT INTO movies VALUES('SCRM06', 'SCREAMVI', 'Tyler Gillett', 'R', 122, '10-Mar-23', 'In the next installment, the survivors of the Ghostface killings leave Woodsboro behind and start a fresh chapter in New York City.');
+
+INSERT INTO movies VALUES('SCRM06', 'Scream VI', 'Tyler Gillett', 'R', 122, '10-Mar-23', 'In the next installment, the survivors of the Ghostface killings leave Woodsboro behind and start a fresh chapter in New York City.');
+
+INSERT INTO movies VALUES('JUM95', 'Jumanji', 'Joe Johnston', 'PG', 104, '15-Dec-95', 'When two kids find and play a magical board game, they release a man trapped in it for decades - and a host of dangers that can only be stopped by finishing the game.');
+
+INSERT INTO movies VALUES('SMB2023', 'The Super Mario Bros. Movie', 'Aaron Horvath', 'PG', 92, '05-Apr-23', 'The story of The Super Mario Bros. on their journey through the Mushroom Kingdom.');
 
 INSERT INTO screenings VALUES('0423JW1', 'JW042023', 'MT03', '23-Apr-23', '1:20PM');
 INSERT INTO screenings VALUES('0423JW2', 'JW042023', 'MT03', '23-Apr-23', '5:30PM');
 INSERT INTO screenings VALUES('0424JW1', 'JW042023', 'SVT02', '24-Apr-23', '12:50PM');
 INSERT INTO screenings VALUES('0424JW2', 'JW042023', 'MT01', '24-Apr-23', '11:40AM');
-INSERT INTO screenings VALUES('0425JW1','JW042023', 'MT02', '25-Apr-23', '10:30AM');
-INSERT INTO screenings VALUES('0425JW2','JW042023', 'MT02', '25-Apr-23', '2:30PM');
-INSERT INTO screenings VALUES('SCRN01','SCRM06', 'WW01', '20-Apr-23', '1:30PM');
+INSERT INTO screenings VALUES('0425JW1', 'JW042023', 'MT02', '25-Apr-23', '10:30AM');
+INSERT INTO screenings VALUES('0425JW2', 'JW042023', 'MT02', '25-Apr-23', '2:30PM');
+INSERT INTO screenings VALUES('SCRN01', 'SCRM06', 'WW01', '20-Apr-23', '1:30PM');
 INSERT INTO screenings VALUES('SCRN03', 'SCRM06', 'RR01', '30-Apr-23', '4:00PM');
 INSERT INTO screenings VALUES('SCNRM08', 'KK275', 'WW02', '27-Apr-23', '9:30AM');
 INSERT INTO screenings VALUES('SCNRM05', 'KK275', 'RR02', '19-Apr-23', '12:30PM');
+INSERT INTO screenings VALUES('0613FTA', 'JUM95', 'FT0', '21-Apr-23', '1:00AM');
+INSERT INTO screenings VALUES('PAT5469', 'SMB2023', 'PT96', '29-Apr-23', '7:00PM');
 
 INSERT INTO customers VALUES('JW000100', 'Jonathan Wicker', '973-168-7982', 'johnwickr@gmail.com' );
 INSERT INTO customers VALUES('MR000022', 'Melanie Richardson', '973-111-3610', 'melsrich@outlook.com' );
 INSERT INTO customers VALUES('JK000213', 'Jason Krueger', '213-553-0666', 'jkrueger@aol.com' );
 INSERT INTO customers VALUES('SM000706', 'Samuel Movie', '855-984-2001', 'Samovie@gmail.com' );
+INSERT INTO customers VALUES('JP000060', 'Jackson Powel', '636-248-5465', 'jackpowel@gmail.com');
+INSERT INTO customers VALUES('GF000500', 'Gerald Forbes', '917-789-8616', 'gerforbes@outlook.com');
 
 INSERT INTO reservations VALUES('00000001', 'JW000100', '0423JW2', 'B4', 12.42);
 INSERT INTO reservations VALUES('00000002', 'JW000100', '0424JW1', 'C7', 13.50);
@@ -45,3 +60,5 @@ INSERT INTO reservations VALUES('00000004', 'JW000100', '0425JW2', 'G4', 12.42);
 INSERT INTO reservations VALUES('00000098', 'JK000213', 'SCNRM08', 'F2', 8.50 );
 INSERT INTO reservations VALUES('00000099', 'JK000213', 'SCNRM08', 'F3', 8.50 );
 INSERT INTO reservations VALUES('00000230', 'SM000706', 'SCRN03', 'J8', 10.50 );
+INSERT INTO reservations VALUES('00000241', 'JP000060', '0613FTA', '48', 6.91);
+INSERT INTO reservations VALUES('00000468', 'GF000500', 'PAT5469', '20', 17.21);
